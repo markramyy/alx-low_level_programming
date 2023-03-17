@@ -5,18 +5,18 @@
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
-    int i;
+	int num;
+	char letter;
 
-    for (i = 0; i < 10; i++)
-      putchar(i + '0');
-    
-    for (i = 0; i < 6; i++)
-      putchar(i + 'a');
-    
-    putchar('\n');
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-    return (0);
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
 }
